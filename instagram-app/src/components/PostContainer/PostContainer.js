@@ -3,8 +3,14 @@ import CommentSection from '../CommentSection/CommentSection';
 
 const PostContainer = props => {
     return (
-        <CommentSection comments={props.data.comments} />
-    )
+        <div>
+          {props.data.map(user => {
+            return (
+              <CommentSection comments={user.comments} key={user.id} />
+            );
+          })}
+        </div>
+      );
 }
 
 export default PostContainer;

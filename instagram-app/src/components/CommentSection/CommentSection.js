@@ -3,7 +3,7 @@ import Comment from './Comment'
 
 const CommentSection = props => {
     return (
-        <Comment />
+        <Comment comments={props.comments}/>
     )
 }
 
