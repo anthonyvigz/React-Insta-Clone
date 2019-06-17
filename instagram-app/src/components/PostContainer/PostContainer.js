@@ -2,8 +2,6 @@ import React from 'react';
 import CommentSection from '../CommentSection/CommentSection'
 
 const PostContainer = props => {
-        console.log(props)
-
         return (
             <div>
                 {props.data.map( post => {

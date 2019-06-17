@@ -1,8 +1,12 @@
 import React from 'react';
 
 const Comment = props => {
+    console.log(props.text)
     return (
-        <div>hey</div>
+        <div>
+            {props.username}
+            {props.comment}
+        </div>
     )
 }
 

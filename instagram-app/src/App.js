@@ -15,7 +15,7 @@ class App extends React.Component {
   render() {
     return (
     <div className="App">
-        <PostContainer data={this.state.data} />
+        <PostContainer data={this.state.data} key={this.state.data.id} />
     </div>
     )
   }
